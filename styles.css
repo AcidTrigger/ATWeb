@@ -9,7 +9,7 @@ body {
 }
 
 .invisible-header, .invisible-footer {
-    height: 350px; /* Set height for spacing */
+    height: 450px; /* Set height for spacing */
     visibility: hidden; /* Make them invisible */
 }
 
@@ -23,13 +23,13 @@ body {
 
 .center-gif img {
     max-width: 100%; /* Adjusted for better visibility */
-    width: 500px; /* Set a fixed width for the centered GIF */
+    width: 600px; /* Set a fixed width for the centered GIF */
     height: auto; /* Maintain aspect ratio */
 }
 
 .icon-container {
     position: absolute; /* Position it absolutely */
-    left: 20px; /* Distance from the left */
+    left: 40px; /* Distance from the left */
     top: 50%; /* Center vertically */
     transform: translateY(-50%); /* Adjust for the element's own size */
     display: flex;
@@ -39,7 +39,7 @@ body {
 
 .right-icons {
     position: absolute; /* Position it absolutely */
-    left: calc(20px + 140px); /* Adjust this value based on the width of the left icons */
+    left: calc(90px + 140px); /* Adjust this value based on the width of the left icons */
     top: 42%; /* Center vertically */
     transform: translateY(-50%); /* Adjust for the element's own size */
     display: flex;
@@ -49,11 +49,11 @@ body {
 
 .icon {
     cursor: pointer; /* Change cursor to pointer on hover */
-    transition: transform 0.2s; /* Smooth scaling effect */
+    transition: transform 0.3s; /* Smooth scaling effect */
 }
 
 .icon img {
-    max-width: 120px; /* Set a larger max width for icons */
+    max-width: 150px; /* Set a larger max width for icons */
     height: auto; /* Maintain aspect ratio */
 }
 
