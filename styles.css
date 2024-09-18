@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: url('https://github.com/AcidTrigger/ATWeb/blob/main/Background%20Scanlines.gif?raw=true') no-repeat center center fixed; /* Set GIF as background */
+    background-size: cover; /* Scale background to cover the entire screen */
+    position: relative; /* Positioning context for the centered GIF */
+}
+
+.invisible-header, .invisible-footer {
+    height: 350px; /* Set height for spacing */
+    visibility: hidden; /* Make them invisible */
+}
+
+.center-gif {
+    position: absolute; /* Position it absolutely */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for the element's own size */
+    z-index: 1; /* Ensure it appears above the background */
+}
+
+.center-gif img {
+    max-width: 100%; /* Adjusted for better visibility */
+    width: 500px; /* Set a fixed width for the centered GIF */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.icon-container {
+    position: absolute; /* Position it absolutely */
+    left: 20px; /* Distance from the left */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for the element's own size */
+    display: flex;
+    flex-direction: column; /* Stack icons vertically */
+    gap: 20px; /* Space between icons */
+}
+
+.right-icons {
+    position: absolute; /* Position it absolutely */
+    left: calc(20px + 140px); /* Adjust this value based on the width of the left icons */
+    top: 42%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for the element's own size */
+    display: flex;
+    flex-direction: column; /* Stack icons vertically */
+    gap: 20px; /* Space between icons */
+}
+
+.icon {
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: transform 0.2s; /* Smooth scaling effect */
+}
+
+.icon img {
+    max-width: 120px; /* Set a larger max width for icons */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.icon:active {
+    transform: scale(1.3); /* Scale up slightly on click */
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 30%; /* Full width */
+    height: 50%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0); /* Black w/ opacity */
+}
+
+.modal-content {
+    position: relative; /* Position relative for the close button */
+    margin: auto; /* Center the modal */
+    padding: 50; /* Remove padding */
+    border: none; /* No border */
+    width: fit-content; /* Width based on content (image) */
+    height: fit-content; /* Height based on content (image) */
+    max-width: 100%; /* Set a max width to ensure it doesn't exceed the image size */
+}
+
+.close {
+    position: absolute; /* Position the close button */
+    top: 10px; /* Distance from the top */
+    right: 15px; /* Distance from the right */
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.close:hover,
+.close:focus {
+    color: black; /* Change color on hover */
+    text-decoration: none; /* Remove underline */
+}
+
+.modal-image {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    width: 100%; /* Ensure the image takes the full width of the modal */
+}
+
+.scale-up {
+    transform: scale(1.1); /* Scale the modal content */
+}
