@@ -1,7 +1,6 @@
 document.querySelectorAll('.icon').forEach(icon => {
     icon.addEventListener('click', function() {
         // Add your click functionality here
-        alert(`You clicked on ${this.id}`);
     });
 });
 document.getElementById('icon6').addEventListener('click', function() {
