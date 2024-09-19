@@ -18,7 +18,7 @@ body {
     top: 50%; /* Center vertically */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Adjust for the element's own size */
-    z-index: 1; /* Ensure it appears above the background */
+    z-index: 0; /* Ensure it appears behind other elements */
 }
 
 .icon-container {
@@ -105,7 +105,7 @@ body {
 }
 
 .modal-title {
-    font-size: 15px; /* Font size for the title */
+    font-size: 20px; /* Font size for the title */
     font-weight: bold; /* Bold title */
     position: relative; /* Position it relative to the header */
     left: 0; /* Reset left position */
