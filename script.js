@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
         icon.addEventListener('click', function() {
             // Play the click sound
             const clickSound = document.getElementById('clickSound');
+            clickSound.volume = 0.4;
             clickSound.currentTime = 0; // Reset to the start
             clickSound.play(); // Play the sound
         });
@@ -11,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Open a link in a new window when icon4 is clicked
     document.getElementById('icon4').addEventListener('click', function() {
-        window.open('https://www.twitch.tv/acidtrigger', '_blank'); // Replace with your desired URL
+        window.open('https://www.youtube.com/@AcidTrigger', '_blank'); // Replace with your desired URL
     });
 
     // Show the modal when icon6 is clicked
