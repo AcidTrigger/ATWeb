@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS CHANGE FOR PUB TEST -->
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS -->
 </head>
 <body>
-
-    <script src="script.js"></script> <!-- Link to JS -->
+    <audio id="clickSound" src="https://github.com/AcidTrigger/ATWeb/blob/Content/Click Sound.mp3?raw=true" preload="auto"></audio> <!-- Add your audio file here -->
     <header class="invisible-header"></header> <!-- Invisible Header -->
     <main>
         <div class="icon-container">
@@ -26,21 +25,20 @@
             </div>
         </div>
         
-        <!-- New container for right-side icons -->
         <div class="icon-container right-icons">
             <div class="icon" id="icon5">
-                <img src="https://github.com/AcidTrigger/ATWeb/blob/Content/Arcade%20Pixel.png?raw=true" alt="Icon 5"> <!-- Replace with actual path -->
+                <img src="https://github.com/AcidTrigger/ATWeb/blob/Content/Arcade%20Pixel.png?raw=true" alt="Icon 5">
             </div>
             <div class="icon" id="icon6">
-                <img src="https://github.com/AcidTrigger/ATWeb/blob/Content/Oak%20Cards%20Pixel.png?raw=true" alt="Icon 6"> <!-- Replace with actual path -->
+                <img src="https://github.com/AcidTrigger/ATWeb/blob/Content/Oak%20Cards%20Pixel.png?raw=true" alt="Icon 6">
             </div>
             <div class="icon" id="icon7">
-                <img src="https://github.com/AcidTrigger/ATWeb/blob/Content/Casa%20Del%20Ekko%20Logo%20Pixel.png?raw=true" alt="Icon 7"> <!-- Replace with actual path -->
+                <img src="https://github.com/AcidTrigger/ATWeb/blob/Content/Casa%20Del%20Ekko%20Logo%20Pixel.png?raw=true" alt="Icon 7">
             </div>
         </div>
 
         <div class="center-gif">
-            <img src="https://github.com/AcidTrigger/ATWeb/blob/Content/AT%20Logo%20Glitched.gif?raw=true" alt="Centered GIF"> <!-- Centered GIF -->
+            <img src="https://github.com/AcidTrigger/ATWeb/blob/Content/AT%20Logo%20Glitched.gif?raw=true" alt="Centered GIF">
         </div>
     </main>
     <footer class="invisible-footer"></footer> <!-- Invisible Footer -->
@@ -48,8 +46,11 @@
     <!-- Modal Structure -->
     <div class="modal" id="modal">
         <div class="modal-content">
-            <span class="close" id="closeModal">&times;</span> <!-- Close button -->
-            <img src="https://github.com/AcidTrigger/ATWeb/blob/Content/Oak&Paper%20Maintenance.png?raw=true" alt="Modal Image" class="modal-image"> <!-- Replace with actual image path -->
+            <div class="modal-header">
+                <div class="modal-title" id="modalTitle">OAK&PAPER : TTG SUPERSTORE</div>
+                <span class="close" id="closeModal">&times;</span>
+            </div>
+            <img class="modal-image" src="https://github.com/AcidTrigger/ATWeb/blob/Content/Oak&Paper%20Maintenance.png?raw=true" alt="Modal Image">
         </div>
     </div>
 
