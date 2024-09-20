@@ -15,6 +15,11 @@ document.addEventListener('DOMContentLoaded', function() {
         window.open('https://www.twitch.tv/acidtrigger', '_blank'); // Replace with your desired URL
     });
 
+    // Open a link in a new window when icon3 is clicked
+    document.getElementById('icon3').addEventListener('click', function() {
+        window.open('https://discord.com/invite/ygT2PavFTq', '_blank'); // Replace with your desired URL
+    });
+
     // Show the modal when icon6 is clicked
     document.getElementById('icon6').addEventListener('click', function() {
         console.log('Icon 6 clicked'); // Debugging line
